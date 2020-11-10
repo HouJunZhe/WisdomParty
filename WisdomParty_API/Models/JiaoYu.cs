@@ -5,6 +5,11 @@ using System.Web;
 
 namespace WisdomParty_API.Models
 {
+    public class JY
+    {
+        public List<JiaoYu> jy { get; set; }///教育信息
+        public int JYcount { get; set; }//总条数
+    }
     public class JiaoYu
     {
         //专题教育
