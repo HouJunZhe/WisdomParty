@@ -88,6 +88,7 @@
     <Compile Include="DAL\DangJianClass.cs" />
     <Compile Include="DAL\DangJianLearning.cs" />
     <Compile Include="DAL\DangJianList.cs" />
+    <Compile Include="DAL\DangshiDAL.cs" />
     <Compile Include="DAL\DangYuanDAL.cs" />
     <Compile Include="DAL\DBHelper.cs" />
     <Compile Include="DAL\HDliebiaoDAL.cs" />
