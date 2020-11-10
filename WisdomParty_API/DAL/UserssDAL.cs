@@ -10,7 +10,7 @@ namespace WisdomParty_API.DAL
 {
     public class UserssDAL
     {
-        //登录管理员信息
+        //登录管理员信息JJ
         public Userss UsersDeng(Userss u) 
         {
             string sql = $"select Uid,Uname from Users where Uname='{u.Uname}' and Upwd='{u.Upwd}'";
