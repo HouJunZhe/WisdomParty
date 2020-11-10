@@ -5,6 +5,11 @@ using System.Web;
 
 namespace WisdomParty_API.Models
 {
+    public class TK
+    {
+        public List<TiKu> tk { get; set; }///教育信息
+        public int TKcount { get; set; }//总条数
+    }
     public class TiKu
     {
         //考试题库
