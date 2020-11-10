@@ -87,10 +87,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="DAL\DangYuanDAL.cs" />
     <Compile Include="DAL\DBHelper.cs" />
+    <Compile Include="DAL\HDliebiaoDAL.cs" />
+    <Compile Include="DAL\KaoShiDAL.cs" />
     <Compile Include="DAL\MenuDAL.cs" />
     <Compile Include="DAL\NewsZXDAL.cs" />
     <Compile Include="DAL\RolesDAL.cs" />
     <Compile Include="DAL\UserssDAL.cs" />
+    <Compile Include="DAL\ZhengGeDAL.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
