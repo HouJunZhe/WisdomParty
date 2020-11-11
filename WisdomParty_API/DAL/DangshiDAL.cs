@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using Users.Dal;
@@ -10,10 +12,10 @@ namespace WisdomParty_API.DAL
 	public class DangshiDAL
 	{
 		//分页
-		public Dangshi Dangshifenye(int page, int size)
+		public DangShi Dangshifenye(int page, int size)
 		{
 			SqlParameter sqlParameter = new SqlParameter("@count", System.Data.SqlDbType.Int) { Direction = System.Data.ParameterDirection.Output };
-			Dangshi Nds = new Dangshi();
+			DangShi Nds = new DangShi();
 			SqlParameter[] sqlParameters = new SqlParameter[]
 			{
 			   new SqlParameter("@page",page),

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomParty_API", "WisdomPa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{2A4C8D31-8315-4400-A2A2-B822E07A40A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{6831783E-5072-422A-B42B-6F6B3E9B3EA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WisdomParty_MVC", "WisdomParty_MVC\WisdomParty_MVC.csproj", "{2D5DF049-5D25-4E06-ABEF-CCBF92084EA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{7A642781-D0E9-4B43-97B1-AEDDC41E3569}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A642781-D0E9-4B43-97B1-AEDDC41E3569}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A642781-D0E9-4B43-97B1-AEDDC41E3569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D5DF049-5D25-4E06-ABEF-CCBF92084EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D5DF049-5D25-4E06-ABEF-CCBF92084EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D5DF049-5D25-4E06-ABEF-CCBF92084EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D5DF049-5D25-4E06-ABEF-CCBF92084EA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7A642781-D0E9-4B43-97B1-AEDDC41E3569} = {2A4C8D31-8315-4400-A2A2-B822E07A40A9}
+		{2D5DF049-5D25-4E06-ABEF-CCBF92084EA6} = {6831783E-5072-422A-B42B-6F6B3E9B3EA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F8C1B829-9806-4252-A428-D997C753BF61}

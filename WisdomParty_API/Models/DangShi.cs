@@ -5,8 +5,14 @@ using System.Web;
 
 namespace WisdomParty_API.Models
 {
-    public class DangShi
-    {
+
+	public class DangShi
+	{
+		public List<DS> ds { get; set; }//党员信息
+		public int DScount { get; set; }//总条数
+	}
+	public class DS
+	{
         //党史人物
         public int Dsid       { get; set; }//编号
         public string Dslei      { get; set; }//下拉（党史人物）

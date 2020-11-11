@@ -38,6 +38,11 @@ namespace WisdomParty_API.DAL
             DY dd = JsonConvert.DeserializeObject<List<DY>>(str).FirstOrDefault();
             return dd;
         }
-
+        //注册党员信息
+        public int DYAdd(DY d) 
+        {
+            string sql = $"insert into DangYuan(DYweixin,DYname,DYhao,DYpwd,DYgonghao,DYsex,DYchusheng,DYxueli,DYrudang,DYzhibu) values('{d.DYweixin}','{d.DYname}','{d.DYhao}','{d.DYpwd}','{d.DYgonghao}','{d.DYsex}','{d.DYchusheng}','{d.DYxueli}','{d.DYrudang}','{d.DYzhibu}')";
+            return DBHelper.ExecuteNonQuery(sql, System.Data.CommandType.Text);
+        }
     }
 }

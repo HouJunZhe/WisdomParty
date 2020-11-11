@@ -1,0 +1,105 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <link href="~/layui/layui-v2.5.6/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/layui/layui-v2.5.6/layui/layui.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+        @*<form action="" method="post">*@
+            <div class="layui-form-item">
+                <label class="layui-form-label">选择框</label>
+                <select id="zxlei">
+                    <option value="新闻资讯">新闻资讯</option>
+                </select>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">*新闻资讯标题：</label>
+                <div class="layui-input-block">
+                    <input type="text" id="zxtitle" name="title" style="width:200px" lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">新闻资讯描述：</label>
+                <div class="layui-input-block">
+                    <textarea name="desc" id="zxmiao" style="width:500px" placeholder="请输入内容" class="layui-textarea"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">新闻资讯封面：</label>
+                <div class="layui-input-block">
+                    <input type="file" id="file" />
+                </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">新闻资讯视频：</label>
+                <div class="layui-input-block">
+                    <input type="file" id="files" />
+                </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">新闻资讯内容：</label>
+                <div class="layui-input-block">
+                    <textarea name="desc" id="zxnei" style="width:500px" placeholder="请输入内容" class="layui-textarea"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">*新闻来源：</label>
+                <div class="layui-input-block">
+                    <input type="text" id="zxly" name="title" style="width:400px" lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">*新闻网址：</label>
+                <div class="layui-input-block">
+                    <input type="text" id="zxurl" name="title" style="width:400px" lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo" onclick="tian()">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        @*</form>*@
+</body>
+</html>
+<script>
+    function tian()
+    {
+        var dt = new FormData();
+        dt.append("zxlei", $("#zxlei").val());
+        dt.append("zxtitle", $("#zxtitle").val());
+        dt.append("zxmiao", $("#zxmiao").val());
+        dt.append("file", $("#file").get(0).files[0]);
+        dt.append("files", $("#files").get(0).files[0]);
+        dt.append("zxnei", $("#zxnei").val());
+        dt.append("zxly", $("#zxly").val());
+        dt.append("zxurl", $("#zxurl").val());
+        $.ajax({
+            url: "http://localhost:51326/newzx/zxadd",
+            type: "post",
+            data: dt,
+            contentType: false,
+            processData: false,
+            success: function (res)
+            {
+                if (res > 0) {
+                    alert("添加成功");
+                    location.href = '/NewsZX/Index';
+                }
+                else {
+                    alert("添加失败");
+                }
+            }
+        })
+    }
+</script>

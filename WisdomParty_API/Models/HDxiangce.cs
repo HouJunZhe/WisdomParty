@@ -5,7 +5,13 @@ using System.Web;
 
 namespace WisdomParty_API.Models
 {
-    public class HDxiangce
+
+	public class HDxiangce
+	{
+		public List<HD> hd { get; set; }//党员信息
+		public int HDcount { get; set; }//总条数
+	}
+	public class HD
     {
         //活动相册
         public int XZid    { get; set; }//编号
