@@ -1,0 +1,98 @@
+/* base */
+html, body {
+    font-size: 14px;
+    height: 100%;
+    font-family: Microsoft Yahei,PingFangSC-Regular,Tahoma,sans-serif!important;
+    -webkit-font-smoothing: antialiased;
+}
+
+article, aside, blockquote, body, button, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, section, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+a {
+    color: #333;
+    background: 0 0;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+
+    a:hover {
+        color: #d81e06;
+        text-decoration: none;
+    }
+
+.container {
+    width: 100%;
+}
+
+.breadcrumb {
+    font-size: .8rem;
+    border-bottom: 1px solid #d8d8d8;
+    border-radius: initial;
+    margin-bottom: initial;
+}
+
+
+/* study list */
+.studylist {
+    padding: 0 30px;
+}
+
+    .studylist > li {
+        padding: 15px 0 15px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+        .studylist > li:last-child {
+            border-bottom: none;
+        }
+
+        .studylist > li > div {
+            padding: 6px 0;
+            font-size: .9rem;
+        }
+
+    .studylist .title {
+        font-size: 1.0rem;
+    }
+
+    .studylist .desc {
+        color: #666666;
+    }
+
+    .studylist .other {
+        display: flex;
+    }
+
+        .studylist .other > div {
+            flex: 1;
+        }
+
+            .studylist .other > div:last-child {
+                text-align: right;
+            }
+/* study list end*/
+@media screen and (max-width: 640px) {
+    .breadcrumb {
+        display: none;
+    }
+
+    .studylist {
+        padding: 0;
+    }
+}

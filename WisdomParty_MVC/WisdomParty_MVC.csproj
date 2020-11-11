@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\NewsZXController.cs" />
+    <Compile Include="Controllers\QiantaiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -135,6 +136,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Homepage.html" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.png" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.png" />
+    <Content Include="images\banner1.png" />
+    <Content Include="images\btn_l.png" />
+    <Content Include="images\btn_r.png" />
+    <Content Include="images\loginbg_20181029.jpg" />
+    <Content Include="images\qrcode_service.jpg" />
+    <Content Include="images\slogen.png" />
     <Content Include="layui\layui-v2.5.6\layui\css\layui.css" />
     <Content Include="layui\layui-v2.5.6\layui\css\layui.mobile.css" />
     <Content Include="layui\layui-v2.5.6\layui\css\modules\code.css" />
@@ -241,6 +254,7 @@
     <Content Include="layui\layui-v2.5.6\layui\lay\modules\upload.js" />
     <Content Include="layui\layui-v2.5.6\layui\lay\modules\util.js" />
     <Content Include="layui\layui-v2.5.6\免责声明.txt" />
+    <Content Include="login.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="layui\layui-v2.5.6.zip" />
@@ -264,6 +278,22 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\qiantai\adminpage.css" />
+    <Content Include="Scripts\qiantai\adminstyle.css" />
+    <Content Include="Scripts\qiantai\bootstrap.js" />
+    <Content Include="Scripts\qiantai\bootstrap.min.css" />
+    <Content Include="Scripts\qiantai\bootstrap.min.js" />
+    <Content Include="Scripts\qiantai\carousel.css" />
+    <Content Include="Scripts\qiantai\font-awesome.css" />
+    <Content Include="Scripts\qiantai\jquery-1.11.2.min.js" />
+    <Content Include="Scripts\qiantai\jquery-accordion-menu.css" />
+    <Content Include="Scripts\qiantai\jquery-accordion-menu.js" />
+    <Content Include="Scripts\qiantai\jquery.carousel.js" />
+    <Content Include="Scripts\qiantai\jquery.min.js" />
+    <Content Include="Scripts\qiantai\lb.css" />
+    <Content Include="Scripts\qiantai\lb.js" />
+    <Content Include="Scripts\qiantai\modernizr-2.8.3.js" />
+    <Content Include="Scripts\qiantai\webstyle.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -280,6 +310,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\NewsZX\Index.cshtml" />
     <Content Include="Views\NewsZX\Add.cshtml" />
+    <Content Include="Views\Qiantai\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

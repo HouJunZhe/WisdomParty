@@ -1,0 +1,191 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/qiantai/jquery-1.11.2.min.js"></script>
+    <link href="~/Scripts/qiantai/font-awesome.css" rel="stylesheet" />
+    <link href="~/Scripts/qiantai/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Scripts/qiantai/jquery-accordion-menu.css" rel="stylesheet" />
+    <link href="~/Scripts/qiantai/adminpage.css" rel="stylesheet" />
+    <link href="~/Scripts/qiantai/adminstyle.css" rel="stylesheet" />
+    <script src="~/Scripts/qiantai/jquery-accordion-menu.js"></script>
+    <script src="~/Scripts/qiantai/bootstrap.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+
+        $(function () {
+            //顶部导航切换
+            $("#demo-list li").click(function () {
+                $("#demo-list li.active").removeClass("active")
+                $(this).addClass("active");
+            })
+        })
+    </script>
+    <style>
+        #demo-list a {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+        }
+    </style>
+    <div id="app" class="red">
+        <div id="header" class="s-topbar">
+            <div class="navigation">
+                <div class="Q">
+                    <a href="#">
+                        <img src="/images/1.jpg" width="53" height="49" />
+                        党建云平台
+                    </a>
+                </div>
+                <div class="nav-left">
+                    <ul id="userinfo" class="userinfo">
+                        <li class="login dropdown">
+                            您好,【<a href="#">党建</a>】
+                            <ul class="sub-menu">
+                                <li><a href="#">退出登录</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-link-3">新闻资讯</a>
+                        </li>
+                        <li class="dropdown"><a href="#">党建要闻</a></li>
+                        <li class="dropdown"><a href="#">政策法规</a></li>
+                        <li class="dropdown"><a href="#">反腐倡廉</a></li>
+                        <li class="dropdown"><a href="#">党史人物</a></li>
+                        <li class="dropdown"><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="center-left scrollbar">
+            <div class="left-nav">
+                <div id="jquery-accordion-menu" class="jquery-accordion-menu">
+                    <ul id="demo-list">
+
+                        <li>
+                            <a href="#"><i class="fa fa-cog"></i>专题教育 <span class="submenu-indicator">+</span></a>
+                            <ul class="submenu">
+                                <li><a href="javascript:" data-url="/center/study"><i class="fa fa-cog"></i>两学一做 </a></li>
+                                <li><a href="javascript:" data-url="/center/study"><i class="fa fa-cog"></i>三会一课 </a></li>
+                                <li><a href="javascript:" data-url="/center/study"><i class="fa fa-cog"></i>八项规定 </a></li>
+                                <li><a href="javascript:" data-url="/center/study"><i class="fa fa-cog"></i>三严三实 </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-suitcase"></i>党建会议 <span class="submenu-indicator">+</span></a>
+                            <ul class="submenu">
+                                <li><a href="javascript:" data-url="/css/t.html" target="myiframe">三会一课 </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-glass"></i>党建活动 </a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i>党建相册 </a></li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-suitcase"></i>党建考核 <span class="submenu-indicator">+</span></a>
+                            <ul class="submenu">
+                                <li><a href="#"><i class="fa fa-home"></i>在线考核 </a></li>
+                                <li><a href="#"><i class="fa fa-user"></i>党员自评 </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-user"></i>在线考试 </a></li>
+                        <li><a href="#"><i class="fa fa-file-image-o"></i>党费缴纳 </a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i>通知公告 <span class="jquery-accordion-menu-label">12 </span></a></li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-envelope"></i>党员中心 <span class="submenu-indicator">+</span></a>
+                            <ul class="submenu">
+                                <li><a href="#"><i class="fa fa-envelope"></i>基本信息 </a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i>我的积分 </a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i>我的考试 </a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i>我的考核 </a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i>党费记录 </a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i>意见建议 </a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper " style="padding-top: 75px;">
+            <div class="i-content page-solution scrollbar">
+                <iframe id="myiframe" name="myiframe" src="/center/welcome/index" class="" style="width: 100%; height: 99%; border: none;"></iframe>
+                <!--<div style="width:500px;height:1500px;border:1px solid red;">welcome</div>-->
+            </div>
+        </div>
+        <script type="text/javascript">
+    /*
+        (function ($) {
+            $.expr[":"].Contains = function (a, i, m) {
+                return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+            };
+            function filterList(header, list) {
+                @*@header 头部元素*@
+        @*@list*@ 无需列表
+        //创建一个搜素表单
+        var form = $("<form>").attr({
+            "class": "filterform",
+            action: "#"
+        }), input = $("<input>").attr({
+            "class": "filterinput",
+            type: "text"
+        });
+        $(form).append(input).appendTo(header);
+        $(input).change(function () {
+            var filter = $(this).val();
+            if (filter) {
+                $matches = $(list).find("a:Contains(" + filter + ")").parent();
+                $("li", list).not($matches).slideUp();
+                $matches.slideDown();
+            } else {
+                $(list).find("li").slideDown();
+            }
+            return false;
+        }).keyup(function () {
+            $(this).change();
+        });
+    }
+        $(function () {
+            filterList($("#form"), $("#demo-list"));
+        });
+    })(jQuery);
+    */
+        </script>
+        <script type="text/javascript">
+
+            jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
+
+            $('#demo-list li a').each(function () {
+                //console.log($(this).src);
+                $(this).on('click', function () {
+                    var url = $(this).data('url');
+                    //console.log('url=' + url);
+                    //console.log('text='+$(this).html());
+                    if (url != "undefined" && url != "") {
+                        $('#myiframe').attr('src', url);
+                    }
+                });
+            });
+            $('.logo-img').on('click', function () {
+                var url = $(this).data('url');
+                if (url != "undefined" && url != "") {
+                    $('#myiframe').attr('src', url);
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
