@@ -311,6 +311,8 @@
     <Content Include="Views\NewsZX\Index.cshtml" />
     <Content Include="Views\NewsZX\Add.cshtml" />
     <Content Include="Views\Qiantai\Index.cshtml" />
+    <Content Include="Views\Qiantai\Homepage.cshtml" />
+    <Content Include="Views\Qiantai\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
